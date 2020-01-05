@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Cartoon Network</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/animation.css">
+	</head>
+	<body onload="startTime()">
+		<!--Plugins JS e jQuery-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jcarousellite.js"></script>
+		<script type="text/javascript" src="js/funcoes.js"></script>
+		<script type="text/javascript" src="js/carrossel.js"></script>
+		<!--Plugins JS e jQuery-->
+		<header id="header" class="page-header">
+			<div class="header">
+				<div class="hour-now">
+					<p id="console-time-now"></p>
+					<div id="shedule-information">
+						<div class="name-shedule">
+							<p>o incrível mundo de gumball</p>
+						</div>
+						<div class="plus-information">
+							<p><img src="images/square-plus.svg"></p>
+						</div>
+					</div>
+				</div>
+				<div class="banner-animation">
+					<div class="full-banner">
+						<img src="images/full-banner.gif">
+						<p>publicidade</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="header-nav" class="skip-content">
+			<nav id="nav">
+				<ol class="nav-primary">
+					<li class="level0 nav-1 first">
+            <a class="level0" href="https://www.cartoonnetwork.com.br"><span class="home">Home page</span></a>
+          </li>
+          <li class="level0 nav-1 last">
+            <a class="level0" href="#"><span>Procurar</span></a>
+          </li>
+				</ol>
+			</nav>
+		</div>
+		<!-- Início Dia da Semana -->
+		<div id="schedule-day">
+			<div class="schedule-day">
+				<div id="console-date-day-week"></div>
+			</div>	
+		</div>
+		<!-- Fim Dia da Semana -->
+		<div id="schedule-hour">
+		<!-- Início Horários da Programação -->
+			<div class="schedule-hour">
+				<script type="text/javascript" src="js/horarioDaProgramacao.js"></script>
+			</div>
+		<!-- Fim Horários da Programação -->
+		<!-- Início Programação por horário -->
+			<div id="schedule-per-hour">
+				<div class="schedule-per-hour">
+					<div class="section-hour">
+						<h1>23h</h1>
+					</div>
+					<button id="section" onclick="openAnimeDescri()">
+						<div class="section">
+							<div id="hour"><p class="hour h1">23:00</p></div>
+							<div id="image-description">
+								<p class="image"><img src="images/desenho4.png"></p>
+								<p class="description">Tom & Jerry</p>
+							</div>
+						</div>
+					</button>
+					<button id="section" onclick="openAnimeDescri()">
+						<div class="section">
+							<div id="hour"><p class="hour h2">23:15</p></div>
+							<div id="image-description">
+								<p class="image"><img src="images/desenho4.png"></p>
+								<p class="description">Tom & Jerry</p>
+							</div>
+						</div>
+					</button>
+					<button id="section" onclick="openAnimeDescri()">
+						<div class="section">
+							<div id="hour"><p class="hour h3">23:30</p></div>
+							<div id="image-description">
+								<p class="image"><img src="images/desenho4.png"></p>
+								<p class="description">Tom & Jerry</p>
+							</div>
+						</div>
+					</button>
+					<button id="section" onclick="openAnimeDescri()">
+						<div class="section">
+							<div id="hour"><p class="hour h4">23:45</p></div>
+							<div id="image-description">
+								<p class="image"><img src="images/desenho4.png"></p>
+								<p class="description">Tom & Jerry</p>
+							</div>
+						</div>
+					</button>
+				</div>
+			</div>
+		<!-- Fim Programação por horário -->
+		</div>
+		<!-- Início Carrossel de Personagens -->
+    <div id="carrossel-animations">
+      <div id="carrossel" class="carrossel-animations">
+        <ul class="animation-list-ul">
+          <li>
+            <a href="javascript: openPopupAnime();" property="url" class="showItemLink" data-item-id="93" data-item-title="Turma_da_Mônica">
+              <img class="showPickerImage" alt="Turma da Mônica" src="https://tbsila.cdn.turner.com/toonla/images/cnlatam/show/picker/item/turma-da-monica/br/picker-monica.png" property="thumbnailUrl">
+              <h2 class="showPickerTitle" property="alternateName">TURMA DA MÔNICA</h2>
+            </a>
+          </li>
+          <li>			        
+            <a href="javascript: openPopupAnime();" property="url" class="showItemLink" data-item-id="191" data-item-title="Os_Jovens_Titãs">
+              <img class="showPickerImage" lt="Os Jovens Titãs" src="https://tbsila.cdn.turner.com/toonla/images/cnlatam/show/picker/item/os-jovens-titas/br/personaje_picker_teen_titans.png" property="thumbnailUrl">
+              <h2 class="showPickerTitle" property="alternateName">OS JOVENS TITÃS</h2>
+            </a>
+          </li>
+          <li>	            			        
+            <a href="javascript: openPopupAnime();" property="url" class="showItemLink" data-item-id="184" data-item-title="As_Meninas_Super">
+              <img class="showPickerImage" alt="As Meninas Super" src="https://tbsila.cdn.turner.com/toonla/images/cnlatam/show/picker/item/las-chicas-super/ar/ppg2016.3.png" property="thumbnailUrl">
+              <h2 class="showPickerTitle" property="alternateName">AS MENINAS SUPER</h2>
+            </a>
+          </li>
+          <li>
+            <a href="javascript: openPopupAnime();" property="url" class="showItemLink" data-item-id="294" data-item-title="Maçã_e_Cebola">
+              <img class="showPickerImage" alt="Maçã e Cebola" src="https://tbsila.cdn.turner.com/toonla/images/cnlatam/show/picker/item/maca-e-cebola/br/picker-(1).png" property="thumbnailUrl">
+              <h2 class="showPickerTitle" property="alternateName">MAÇÃ E CEBOLA</h2>
+            </a>
+          </li>
+          <li>
+            <a href="javascript: openPopupAnime();" property="url" class="showItemLink" data-item-id="328" data-item-title="Acampamento_de_Verão">
+              <img class="showPickerImage" alt="Acampamento de Verão" src="https://tbsila.cdn.turner.com/toonla/images/cnlatam/show/picker/item/acampamento-de-verao/br/picker.png" property="thumbnailUrl">
+              <h2 class="showPickerTitle" property="alternateName">ACAMPAMENTO DE VERÃO</h2>
+            </a>
+          </li>
+          <li>
+            <a href="javascript: openPopupAnime();" property="url" class="showItemLink" data-item-id="321" data-item-title="O_Mundo_De_Greg">
+              <img class="showPickerImage" alt="O Mundo De Greg" src="https://tbsila.cdn.turner.com/toonla/images/cnlatam/show/picker/item/o-mundo-de-greg/br/picker.png" property="thumbnailUrl">
+              <h2 class="showPickerTitle" property="alternateName">O MUNDO DE GREG</h2>
+            </a>
+          </li>
+          <li>
+            <a href="javascript: openPopupAnime();" property="url" class="showItemLink" data-item-id="18" data-item-title="Hora_de_Aventura">
+              <img class="showPickerImage" alt="Hora de Aventura" src="https://tbsila.cdn.turner.com/toonla/images/cnlatam/content/14/showpage/hora-de-aventura/br/picker-horadeaventura.png" property="thumbnailUrl">
+              <h2 class="showPickerTitle" property="alternateName">HORA DE AVENTURA</h2>
+            </a>
+          </li>
+          <li>
+            <a href="javascript: openPopupAnime();" property="url" class="showItemLink" data-item-id="273" data-item-title="Ivandoe">
+              <img class="showPickerImage" alt="Ivandoe" src="https://tbsila.cdn.turner.com/toonla/images/cnlatam/show/picker/item/ivandoe/ar/slack-imgs.png" property="thumbnailUrl">
+              <h2 class="showPickerTitle" property="alternateName">IVANDOE</h2>
+            </a>
+          </li>
+          <li>
+            <a href="javascript: openPopupAnime();" property="url" class="showItemLink" data-item-id="236" data-item-title="Outra_Semana">
+              <img class="showPickerImage" alt="Outra Semana" src="https://tbsila.cdn.turner.com/toonla/images/cnlatam/show/picker/item/outra-semana/br/picker-awoc-por.png" property="thumbnailUrl">
+              <h2 class="showPickerTitle" property="alternateName">OUTRA SEMANA</h2>
+            </a>
+          </li>
+          <li>
+            <a href="javascript: openPopupAnime();" property="url" class="showItemLink" data-item-id="224" data-item-title="Anything">
+              <img class="showPickerImage" alt="Anything" src="https://tbsila.cdn.turner.com/toonla/images/cnlatam/show/picker/item/anything/ve/picker-anything.5.png" property="thumbnailUrl">
+              <h2 class="showPickerTitle" property="alternateName">ANYTHING</h2>
+            </a>
+          </li>
+          <li>
+            <a href="javascript: openPopupAnime();" property="url" class="showItemLink" data-item-id="250" data-item-title="Vilanesco">
+              <img class="showPickerImage" alt="Vilanesco" src="https://tbsila.cdn.turner.com/toonla/images/cnlatam/show/picker/item/vilanesco/br/picker.png" property="thumbnailUrl">
+              <h2 class="showPickerTitle" property="alternateName">VILANESCO</h2>
+            </a>
+          </li>
+          <li>
+            <a href="javascript: openPopupAnime();" property="url" class="showItemLink" data-item-id="206" data-item-title="Ben_10">
+              <img class="showPickerImage" alt="Ben 10" src="https://tbsila.cdn.turner.com/toonla/images/cnlatam/show/picker/item/ben-10/br/picker-ben.png" property="thumbnailUrl">
+              <h2 class="showPickerTitle" property="alternateName">BEN 10</h2>
+            </a>
+          </li>
+          <li>
+            <a href="javascript: openPopupAnime();" property="url" class="showItemLink" data-item-id="154" data-item-title="Ursos_Sem_Curso">
+              <img class="showPickerImage" alt="Ursos Sem Curso" src="https://tbsila.cdn.turner.com/toonla/images/cnlatam/show/picker/item/ursos-sem-curso/br/picker1.png" property="thumbnailUrl">
+              <h2 class="showPickerTitle" property="alternateName">URSOS SEM CURSO</h2>
+            </a>
+          </li>
+          <li>
+            <a href="javascript: openPopupAnime();" property="url" class="showItemLink" data-item-id="264" data-item-title="Unigata">
+              <img class="showPickerImage" alt="Unigata" src="https://tbsila.cdn.turner.com/toonla/images/cnlatam/show/picker/item/unikitty/ar/picker.png" property="thumbnailUrl">
+              <h2 class="showPickerTitle" property="alternateName">UNIGATA</h2>
+            </a>
+          </li>
+          <li>
+            <a href="javascript: openPopupAnime();" property="url" class="showItemLink" data-item-id="25" data-item-title="Gumball">
+              <img class="showPickerImage" alt="Gumball" src="https://tbsila.cdn.turner.com/toonla/images/cnlatam/content/70/showpage/o-incrivel-mundo-de-gumball/br/picker-gumball.png" property="thumbnailUrl">
+              <h2 class="showPickerTitle" property="alternateName">GUMBALL</h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav id="menu-carrossel">
+        <a href="#" class="prev" title="Anterior">Anterior</a>
+        <a href="#" class="next" title="Próximo">Próximo</a>
+      </nav>
+    </div>
+		<!-- Fim Carrossel de Personagens -->
+    <!--Footer-->
+    <div id="footer-container">
+      <div class="contenedor clearfix">
+        <div id="logo">
+          <a class="logo" href="https://www.cartoonnetwork.com.br">
+            <img src="images/logo_cartoon.png">
+          </a>
+        </div>
+        <div class="desc">
+          <p>O Cartoon Network é o lugar de seus desenhos favoritos, episódios completos, vídeos, aplicativos e jogos grátis. Você pode jogar gratuitamente com seus personagens favoritos de Clarêncio, O Otimista, Jovens Titãs em Ação, Hora de Aventura com Finn e Jake, Apenas Um Show, O Incrível Mundo de Gumball, Steven Universo, Titio Avô, Ursos Sem Curso e muito mais!</p>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="menuLinks">
+          <a href="https://www.cartoonnetwork.com.br/pais" target="_blank" title="Guia Para Pais">Guia Para Pais</a>
+          <a href="https://www.cartoonnetwork.com.br/dicas-de-seguranca" target="_blank" title="Dicas de Segurança">Dicas de Segurança</a>
+          <a href="https://www.cartoonnetwork.com.br/programacao" target="_blank" title="PROGRAMACAO">PROGRAMACAO</a>
+          <a href="http://www.turnertapkit.com/ancine/networkFilesExternal?networkId=cnla" target="_blank" title="PROGRAMAÇÃO EFETIVAMENTE VEICULADA">PROGRAMAÇÃO EFETIVAMENTE VEICULADA</a>
+          <br />
+          <a href="http://www.turnertapkit.com/ancine/networkFilesExternal?networkId=cnhd" target="_blank" title="PROGRAMAÇÃO EFETIVAMENTE VEICULADA (HD)">PROGRAMAÇÃO EFETIVAMENTE VEICULADA (HD)</a>
+          <a href="https://www.cartoonnetwork.com.br/ajuda" target="_blank" title="AJUDA">AJUDA</a>
+        </div>
+      </div>
+    </div>
+    <div id="popupAnime" class="popupAnime">
+      <div id="hoursProgramation">
+        <div class="hoursProgramationClose">
+          <div class="close-page">
+            <a href="javascript: closePopupAnime();"></a>
+          </div>
+        </div>
+        <div id="title-programation">
+          <div class="title-programation">
+            <div id="anime">
+              <img src="images/desenho4.png">
+            </div>
+            <div id="title">
+              <p class="br">Tom & Jerry</p>
+              <p class="en">Tom & Jerry</p>
+            </div>
+          </div>
+          <div id="age-indication">
+            <div class="age-indication">
+              <p>10</p>
+            </div>
+          </div>
+        </div>
+        <div id="weekProgramation">
+          <div class="weekProgramation">
+            <p class="week">Domingo</p>
+            <p class="day">17</p>
+            <p class="hour">23:30</p>
+          </div>
+          <div class="weekProgramation">
+            <p class="week">Domingo</p>
+            <p class="day">17</p>
+            <p class="hour">23:30</p>
+          </div>
+          <div class="weekProgramation">
+            <p class="week">Domingo</p>
+            <p class="day">17</p>
+            <p class="hour">23:30</p>
+          </div>
+          <div class="weekProgramation">
+            <p class="week">Domingo</p>
+            <p class="day">17</p>
+            <p class="hour">23:30</p>
+          </div>
+          <div class="weekProgramation">
+            <p class="week">Domingo</p>
+            <p class="day">17</p>
+            <p class="hour">23:30</p>
+          </div>
+          <div class="weekProgramation">
+            <p class="week">Domingo</p>
+            <p class="day">17</p>
+            <p class="hour">23:30</p>
+          </div>
+          <div class="weekProgramation">
+            <p class="week">Domingo</p>
+            <p class="day">17</p>
+            <p class="hour">23:30</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="popupAnimeDescri" class="popupAnimeDescri">
+      <div id="descriProgramation">
+        <div class="descriProgramationClose">
+          <div class="close-page">
+            <a href="javascript: closeAnimeDescri();"></a>
+          </div>
+        </div>
+        <div id="title-programation">
+          <div class="title-programation">
+            <div id="anime">
+              <img src="images/desenho4.png">
+            </div>
+            <div id="title">
+              <p class="br">Tom & Jerry</p>
+              <p class="en">Tom & Jerry</p>
+              <p class="sub">Gato & Rato</p>
+            </div>
+          </div>
+          <div id="age-indication">
+            <div class="age-indication">
+              <p>10</p>
+            </div>
+          </div>
+        </div>
+        <div id="dayProgramation">
+          <div class="block1">
+            <div id="console-date-day-week2"></div>
+            <br />
+            <p class="descriProgram">
+              Tom e Jerry é considerado um desenho animado de humor físico, de enorme popularidade. Com sete óscares de melhor curta de animação no periodo de Hanna-Barbera. Os efeitos sonoros e a trilha musical da série são muito elogiadas pelos fãs das personagens.
+            </p>
+          </div>
+          <div class="block2">
+            <p class="infos">
+              <span>Hora de Início/Fim:</span>
+              17:30 - 17:45
+            </p>
+            <p class="infos">
+              <span>Ano de Produção:</span>
+              2014
+            </p>
+            <p class="infos">
+              <span>País de Origem:</span>
+              Brasil
+            </p>
+            <p class="infos">
+              <span>Classificação do Conteúdo:</span>
+              Obra não publicitária brasileira, constituinte de espaço qualificado eindependente
+            </p>
+            <p class="infos">
+              <span>Classificação Indicada:</span>
+              10 anos
+            </p>
+            <br />
+            <p class="infos">
+              <span>Gênero:</span>
+              Animação, Comédia
+            </p>
+            <p class="infos">
+              <span>Diretor:</span>
+              Hanna-Barbera
+            </p>
+            <p class="infos">
+              <span>Casting:</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+		<!--Footer End-->		
+	</body>
+</html>
+<script type="text/javascript">
+    dateDayWeek();
+    function dateDayWeek() {
+    	var now = new Date();
+	    var weekday = new Array(7);
+		    weekday[0] = "Domingo";
+		    weekday[1] = "Segunda";
+		    weekday[2] = "Terça";
+		    weekday[3] = "Quarta";
+		    weekday[4] = "Quinta";
+		    weekday[5] = "Sexta";
+		    weekday[6] = "Sábado";
+	    var week = weekday[now.getDay()];
+	    document.getElementById("console-date-day-week").innerHTML = "<p>" + week + "</p><p>" + now.getDate() + "</p>";
+	    document.getElementById("console-date-day-week2").innerHTML = "<p>" + week + "</p><p>" + now.getDate() + "</p>";
+	    var t = setTimeout(startTime, 86400000);
+	}
+
+	function startTime() {
+		var time = new Date();
+	    var h = time.getHours();
+	    var m = time.getMinutes();
+	    var s = time.getSeconds();
+	    h = checkTime(h);
+	    m = checkTime(m);
+	    document.getElementById("console-time-now").innerHTML = h + ":" + m;
+	    var t = setTimeout(startTime, 500);
+	}
+
+	function checkTime(i) {
+	    if (i < 10) {i = "0" + i};
+	    return i;
+	}
+</script>

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Lubalin Graph';
+    src: url('LubalinBold.woff2') format('woff2'),
+        url('LubalinBold.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whitney';
+    src: url('Whitney-Book.woff2') format('woff2'),
+        url('Whitney-Book.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}

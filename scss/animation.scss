@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Lubalin Graph Bold';
+    src: url('../fonts/LubalinBold.woff2') format('woff2'),
+        url('../fonts/LubalinBold.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Whitney';
+    src: url('../fonts/Whitney-Book.woff2') format('woff2'),
+        url('../fonts/Whitney-Book.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+$azul: #009ade;
+$rosa: #ec0080;
+$amarelo: #ffea00;
+$branco: #ffffff;
+$fontFac1: 'Lubalin Graph Bold';
+$fontFac2: 'Whitney';
+
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+div#hoursProgramation, div#descriProgramation {
+    width: 800px;
+    height: 300px;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+}
+div#hoursProgramation { background-color: $azul; }
+div#descriProgramation { background-color: $rosa; height: 550px;}
+
+#hoursProgramation .hoursProgramationClose, #descriProgramation .descriProgramationClose {
+    width: 97.5%;
+    height: 25px;
+    padding: 0.75% 1.25% 0;
+    position: relative;
+}
+#hoursProgramation .hoursProgramationClose .close-page,
+#descriProgramation .descriProgramationClose .close-page {
+    position: relative;
+    width: 20px;
+    height: 25px;
+    margin: 0 0 0 auto;
+}
+#hoursProgramation .hoursProgramationClose .close-page a,
+#descriProgramation .descriProgramationClose .close-page a {
+    color: transparent;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    border-radius: 4px;
+}
+#hoursProgramation .hoursProgramationClose .close-page a {
+    background: $branco url(../images/close-pink.svg) no-repeat 0 0 / 100% auto;
+}
+#descriProgramation .descriProgramationClose .close-page a {
+    background: $branco url(../images/close-blue.svg) no-repeat 0 0 / 100% auto;
+}
+
+#hoursProgramation div#title-programation, #descriProgramation div#title-programation {
+    width: 80%;
+    height: 120px;
+    padding: 14px 10%;
+    position: relative;
+    background-color: $amarelo;
+}
+div#title-programation .title-programation, div#title-programation .title-programation img, 
+div#title-programation .title-programation div#title, div#title-programation div#age-indication {
+    display: inline-block;
+}
+#hoursProgramation div#title-programation .title-programation div#anime,
+#descriProgramation div#title-programation .title-programation div#anime {
+    position: relative;
+    z-index: 9;
+}
+#hoursProgramation div#title-programation .title-programation div#anime img,
+#descriProgramation div#title-programation .title-programation div#anime img {
+    border: 11.5px solid $rosa;
+    border-radius: 100%;
+    margin: 1px 0;
+}
+#descriProgramation div#title-programation .title-programation div#anime img { border: 11.5px solid $azul; }
+
+#hoursProgramation div#title-programation .title-programation div#title,
+#descriProgramation div#title-programation .title-programation div#title {
+    background-color: $rosa;
+    padding: 15px 0;
+    position: absolute;
+    top: 21px;
+    left: 145px;
+    color: $branco;
+    margin: 6px 0;
+    text-indent: 80px;
+    width: 60%;
+}
+#descriProgramation div#title-programation .title-programation div#title {
+    background-color: $azul;
+    padding: 6px 0;
+}
+div#title-programation .title-programation p.br {
+    font-family: $fontFac1;
+    font-size: 30px;
+}
+div#title-programation .title-programation p.en {
+    font-family: $fontFac2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#descriProgramation div#title-programation .title-programation p.br { font-size: 28px; }
+#descriProgramation div#title-programation .title-programation p.sub {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: $fontFac2;
+}
+
+div#title-programation .title-programation {
+    width: 575px;
+}
+div#age-indication .age-indication {
+    font-size: 40px;
+    font-family: $fontFac2;
+    color: $branco;
+    background-color: $azul;
+    padding: 4px 7.58px;
+    border: 3px solid $branco;
+    border-radius: 10px;
+    position: absolute;
+    top: 45px;
+}
+#hoursProgramation div#weekProgramation {
+    margin: 15px 10px;
+}
+#hoursProgramation div#weekProgramation .weekProgramation {
+    text-align: center;
+    display: inline-block;
+    background-color: $branco;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    font-family: $fontFac2;
+    margin: 0 9px;
+}
+#hoursProgramation div#weekProgramation .weekProgramation p.week {
+    margin-top: 18px;
+}
+#hoursProgramation div#weekProgramation .weekProgramation p.week, #hoursProgramation div#weekProgramation .weekProgramation p.day {
+    color: $rosa;
+}
+#hoursProgramation div#weekProgramation .weekProgramation p.hour {
+    color: $amarelo;
+    margin-bottom: 18px;
+}
+#popupAnime, #popupAnimeDescri {    
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+div#dayProgramation .block1, div#dayProgramation .block2 {
+    border-bottom: 2px solid $amarelo;
+    padding: 25px;
+}
+div#dayProgramation p {
+    font-size: 20px;
+    font-family: $fontFac2;
+    font-weight: bold;
+    color: $branco;
+}
+div#dayProgramation p.descriProgram {
+    font-size: 15px;
+    font-weight: normal;
+}
+div#dayProgramation .block2 p.infos {
+    font-size: 15px;
+    font-weight: normal;
+    display: block;
+}
+div#dayProgramation .block2 p.infos span {
+    font-weight: bold;
+}
+#popupAnime {
+    display: none;
+}
+#popupAnimeDescri {
+    display: none;
+}
