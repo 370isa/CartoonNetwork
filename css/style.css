@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'Lubalin Graph Bold';
+  src: url("../fonts/LubalinBold.woff2") format("woff2"), url("../fonts/LubalinBold.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whitney';
+  src: url("../fonts/Whitney-Book.woff2") format("woff2"), url("../fonts/Whitney-Book.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+}
+
+header .header {
+  height: 95px;
+  margin: 0 auto;
+  position: relative;
+  width: 970px;
+}
+
+header .hour-now {
+  height: 100%;
+  display: inline-block;
+  margin: 0 10px 0 40px;
+  position: absolute;
+  text-align: right;
+  top: 0;
+  width: 170px;
+}
+
+header .hour-now p {
+  font-family: "Lubalin Graph Bold";
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+header .hour-now .shedule-information {
+  align-items: center;
+  display: inline-flex;
+  height: 20px;
+}
+
+header .hour-now .name-shedule,
+header .hour-now .plus-information {
+  display: inline-block;
+}
+
+header .hour-now .name-shedule p,
+header .hour-now .plus-information p {
+  font-size: 8px;
+}
+
+header .hour-now .plus-information {
+  margin-left: 5px;
+}
+
+header .hour-now .plus-information img {
+  width: 16px;
+}
+
+header .banner-animation {
+  display: inline-block;
+  width: 745px;
+}
+
+header .banner-animation .full-banner {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  width: auto;
+}
+
+header .banner-animation img {
+  display: inline-block;
+  height: auto;
+  position: relative;
+  width: 98%;
+}
+
+header .banner-animation img ~ p {
+  display: inline-block;
+  font-family: "Lubalin Graph Bold";
+  font-size: 10px;
+  height: 13px;
+  text-transform: uppercase;
+  transform: rotate(270deg);
+  width: 0px;
+}
+
+.header-nav {
+  background-color: #4c4c4c;
+  margin-bottom: 25px;
+}
+
+.header-nav nav {
+  height: 24px;
+  margin: 0 auto;
+  position: relative;
+  width: 970px;
+}
+
+.header-nav nav li {
+  display: inline-block;
+}
+
+.header-nav nav li:first-child a {
+  color: transparent;
+}
+
+.header-nav nav li a .home {
+  background: url(../images/cartoon-logo.png) no-repeat 0 0/auto 30px;
+  height: 30px;
+  left: 0px;
+  position: absolute;
+  top: 0;
+  width: auto;
+}
+
+.header-nav nav li:last-child a span {
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Whitney";
+  margin: 3px 0;
+  padding: 2.5px 75px;
+  position: absolute;
+  right: 25px;
+  text-transform: uppercase;
+  top: 0;
+  width: auto;
+}
+
+.header-nav nav ol {
+  height: 100%;
+  position: relative;
+}
+
+#schedule-day {
+  background-color: #ffea00;
+  color: #fff;
+  font-family: "Lubalin Graph Bold";
+  font-size: 30px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding-top: 5px;
+  width: 970px;
+}
+
+#schedule-day .schedule-day {
+  background-color: #009ade;
+  padding: 5px 0;
+  text-indent: 10px;
+}
+
+#schedule-day p {
+  display: inline-block;
+}
+
+#schedule-day #dayProgramation p {
+  display: inline-block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

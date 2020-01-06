@@ -1,0 +1,56 @@
+.header-nav {
+  background-color: $matterhorn;
+  margin-bottom: 25px;
+
+  nav {
+    height: 24px;
+    margin: 0 auto;
+    position: relative;
+    width: $maxWidth;
+
+    li {
+      display: inline-block;
+
+      &:first-child {
+        a {
+          color: transparent;
+        }
+      }
+
+      a {
+        .home {
+          background: url(../images/cartoon-logo.png) no-repeat 0 0 / auto 30px;
+          height: 30px;
+          left: 0px;
+          position: absolute;
+          top: 0;
+          width: auto;
+        }
+
+      }
+
+      &:last-child {
+        a {
+          span {
+            background-color: $black;
+            color: $white;
+            font-size: 12px;
+            font-family: $fontFac2;
+            margin: 3px 0;
+            padding: 2.5px 75px;
+            position: absolute;
+            right: 25px;
+            text-transform: uppercase;
+            top: 0;
+            width: auto;
+          }
+        }
+      }
+    }
+
+    ol {
+      height: 100%;
+      position: relative;
+    }
+  }
+}

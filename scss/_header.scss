@@ -1,0 +1,79 @@
+header {
+  background-color: $black;
+  color: $white;
+
+  .header {
+    height: 95px;
+    margin: 0 auto;
+    position: relative;
+    width: $maxWidth;
+  }
+
+  .hour-now {
+    height: 100%;
+    display: inline-block;
+    margin: 0 10px 0 40px;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 170px;
+
+    p {
+      font-family: $fontFac1;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+
+    .shedule-information {
+      align-items: center;
+      display: inline-flex;
+      height: 20px;
+    }
+
+    .name-shedule,
+    .plus-information {
+      display: inline-block;
+
+      p {
+        font-size: 8px;
+      }
+    }
+
+    .plus-information {
+      margin-left: 5px;
+
+      img {
+        width: 16px;
+      }
+    }
+  }
+
+  .banner-animation {
+    display: inline-block;
+    width: 745px;
+
+    .full-banner {
+      position: absolute;
+      right: 0px;
+      top: 0;
+      width: auto;
+    }
+
+    img {
+      display: inline-block;
+      height: auto;
+      position: relative;
+      width: 98%;
+
+      &~ p {
+        display: inline-block;
+        font-family: $fontFac1;
+        font-size: 10px;
+        height: 13px;
+        text-transform: uppercase;
+        transform: rotate(270deg);
+        width: 0px;
+      }
+    }
+  }
+}
