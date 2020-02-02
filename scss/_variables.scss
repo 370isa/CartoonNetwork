@@ -1,0 +1,28 @@
+// Colors.
+$deep-pink:         #ec0080;
+$golden-yellow:     #ffea00;
+$matterhorn:        #4c4c4c;
+$pacific-blue:      #009ade;
+
+// Length.
+$maxWidth: 970px;
+
+// Fonts.
+@font-face {
+  font-family: 'Lubalin Graph Bold';
+  src: url('../fonts/LubalinBold.woff2') format('woff2'),
+      url('../fonts/LubalinBold.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whitney';
+  src: url('../fonts/Whitney-Book.woff2') format('woff2'),
+      url('../fonts/Whitney-Book.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+$fontFac1: 'Lubalin Graph Bold';
+$fontFac2: 'Whitney';

@@ -1,0 +1,23 @@
+{
+  "name": "cartoonnetwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/370isa/CartoonNetwork.git"
+  },
+  "author": "Eloisa Amorin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/370isa/CartoonNetwork/issues"
+  },
+  "homepage": "https://github.com/370isa/CartoonNetwork#readme"
+}

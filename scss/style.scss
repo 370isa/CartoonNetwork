@@ -1,0 +1,14 @@
+// Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Variables.
+@import 'variables';
+
+// Style Page.
+@import 'description-footer';
+@import 'footer';
+@import 'header';
+@import 'nav';
+@import 'schedule-hour';
+@import 'schedule-time';
+@import 'zone-date';

@@ -1,0 +1,40 @@
+nav {
+  background: $matterhorn;
+  height: 25px;
+  line-height: 19px;
+
+  .nav-list {
+    display: flex;
+    height: 25px;
+    list-style: none;
+    justify-content: space-around;
+
+    li {
+      position: relative;
+
+      &.home {
+        a {
+          background: url(../images/cartoon-logo.png) no-repeat 0 0 / 100% auto;
+          color: transparent;
+          height: 40px;
+          left: 0px;
+          position: absolute;
+          top: -2px;
+          width: 54px;
+        }
+      }
+
+      &.search {
+        a {
+          background: $black;
+          color: $white;
+          font-family: $fontFac2;
+          padding: 2px 90px;
+          font-size: 12px;
+          text-transform: uppercase;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

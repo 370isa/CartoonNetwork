@@ -1,0 +1,20 @@
+footer {
+  background: $black;
+
+  .menuLinks {
+    padding: 5px 0;
+    text-align: center;
+
+    a {
+      color: $white;
+      font-family: $fontFac1;
+      font-size: 10px;
+      margin: 0 10px;
+      text-decoration: none;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}
