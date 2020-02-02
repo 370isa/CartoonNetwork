@@ -1,13 +1,14 @@
+// Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
 // Variables.
 @import 'variables';
 
-// Stayles.
-@import 'animation';
+// Style Page.
+@import 'description-footer';
+@import 'footer';
 @import 'header';
-@import 'header-nav';
-@import 'schedule-day';
-
-* {
-  margin: 0;
-  padding:0;
-}
+@import 'nav';
+@import 'schedule-hour';
+@import 'schedule-time';
+@import 'zone-date';

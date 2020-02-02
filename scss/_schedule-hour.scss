@@ -1,0 +1,54 @@
+.schedule-hour {
+  padding: 0 30px;
+  text-align: center;
+
+  button {
+    border: 0 none;
+    color: $white;
+    filter: opacity(.8);
+    font-family: $fontFac1;
+    font-size: 25px;
+    height: 110px;
+    margin: 3px;
+    padding: 0;
+    width: 110px;
+
+    &:nth-child(3n + 2) {
+      background: $pacific-blue;
+    }
+
+    &:nth-child(3n + 3) {
+      background: $deep-pink;
+    }
+
+    &:nth-child(3n + 4) {
+      background: $golden-yellow;
+    }
+
+    &.hour-now {
+      background: $black;
+
+      &:nth-child(3n + 2) {
+        color: $pacific-blue;
+      }
+
+      &:nth-child(3n + 3) {
+        color: $deep-pink;
+      }
+
+      &:nth-child(3n + 4) {
+        color: $golden-yellow;
+      }
+    }
+
+    &:hover {
+      filter: none;
+      transition: filter ease 1s;
+    }
+
+    &:last-child {
+      background: $white url('../images/arrow-right-gray.svg') no-repeat center center / 70% auto;
+      color: transparent;
+    }
+  }
+}

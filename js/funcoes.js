@@ -1,21 +1,25 @@
 function sheduleHour() {
 	$( "button.hour-shedule.hour" ).click(function() {
-        $( "div#schedule-hour div#schedule-per-hour" ).toggleClass( "selected" );
-    });
+		$( "div#schedule-hour div#schedule-per-hour" ).toggleClass( "selected" );
+	});
 }
 
 function openPopupAnime() {
-	document.getElementById("popupAnime").style.display = 'flex';
+	setDisplayProperty($("#popupAnime"), 'flex');
 }
 
 function closePopupAnime() {
-	document.getElementById("popupAnime").style.display = 'none';
+	setDisplayProperty($("#popupAnime"), 'none');
 }
 
 function openAnimeDescri() {
-	document.getElementById("popupAnimeDescri").style.display = 'flex';
+	setDisplayProperty($("#popupAnimeDescri"), 'flex');
 }
 
 function closeAnimeDescri() {
-	document.getElementById("popupAnimeDescri").style.display = 'none';
+	setDisplayProperty($("#popupAnimeDescri"), 'none');
+}
+
+function setDisplayProperty(element, displayValue) {
+	element.css('display', displayValue);
 }
