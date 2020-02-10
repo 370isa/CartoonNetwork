@@ -9709,10 +9709,71 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal;
 }
 
+#carrossel-animations {
+  background: linear-gradient(#fff 2%, #ec0080 2%, #ec0080 90%, #009ade 90%, #009ade 97%, #ffea00 97%);
+  height: 150px;
+  margin: 10px 0 1px;
+  position: relative;
+  z-index: 0;
+}
+
+#carrossel-animations .carrossel-animations {
+  height: 100%;
+  margin: 0 auto;
+  width: 74%;
+}
+
+#carrossel-animations .animation-list-ul {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#carrossel-animations .animation-list-ul h2 {
+  display: none;
+}
+
+#carrossel-animations .animation-list-ul li {
+  align-items: flex-end;
+  display: flex;
+  width: 14%;
+}
+
+#carrossel-animations .animation-list-ul img {
+  height: auto;
+  width: 100%;
+}
+
+#carrossel-animations #menu-carrossel {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 7.5%;
+  position: absolute;
+  top: 0;
+  width: 85%;
+  z-index: -1;
+}
+
+#carrossel-animations #menu-carrossel .prev,
+#carrossel-animations #menu-carrossel .next {
+  background: url(../images/arrow-left.svg) no-repeat 0 0/100% auto;
+  color: transparent;
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  z-index: 9;
+}
+
+#carrossel-animations #menu-carrossel .next {
+  background: url(../images/arrow-right.svg) no-repeat 0 0/100% auto;
+}
+
 .description-page-footer {
   background: #4c4c4c;
   color: #fff;
-  margin-top: 30px;
 }
 
 .description-page-footer .footer-sup {
@@ -9843,52 +9904,27 @@ nav .nav-list li.search a {
 
 .schedule-hour button {
   border: 0 none;
-  color: #fff;
   filter: opacity(0.8);
   font-family: "Lubalin Graph Bold";
   font-size: 25px;
   height: 110px;
   margin: 3px;
   padding: 0;
+  transition: filter ease .5s;
   width: 110px;
-}
-
-.schedule-hour button:nth-child(3n + 2) {
-  background: #009ade;
-}
-
-.schedule-hour button:nth-child(3n + 3) {
-  background: #ec0080;
-}
-
-.schedule-hour button:nth-child(3n + 4) {
-  background: #ffea00;
-}
-
-.schedule-hour button.hour-now {
-  background: #000;
-}
-
-.schedule-hour button.hour-now:nth-child(3n + 2) {
-  color: #009ade;
-}
-
-.schedule-hour button.hour-now:nth-child(3n + 3) {
-  color: #ec0080;
-}
-
-.schedule-hour button.hour-now:nth-child(3n + 4) {
-  color: #ffea00;
 }
 
 .schedule-hour button:hover {
   filter: none;
-  transition: filter ease 1s;
+}
+
+.schedule-hour button:focus {
+  filter: opacity(1);
+  outline: none;
 }
 
 .schedule-hour button:last-child {
-  background: #fff url("../images/arrow-right-gray.svg") no-repeat center center/70% auto;
-  color: transparent;
+  background: url("../images/arrow-right-gray.svg") no-repeat center center/70% auto;
 }
 
 .schedule-block-time {
@@ -9907,6 +9943,7 @@ nav .nav-list li.search a {
   color: #fff;
   font-family: "Lubalin Graph Bold";
   font-size: 50px;
+  margin-bottom: 0;
   padding: 24px 0;
 }
 
@@ -9933,6 +9970,11 @@ nav .nav-list li.search a {
   display: flex;
   position: relative;
   right: 30px;
+}
+
+.schedule-block-time button .image-description img {
+  height: 97px;
+  width: 97px;
 }
 
 .schedule-block-time button .image-description span {

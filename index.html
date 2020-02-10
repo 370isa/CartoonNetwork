@@ -7,10 +7,8 @@
 	</head>
 	<body onload="startTime()">
 		<!--Plugins JS e jQuery-->
-		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jcarousellite.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/funcoes.js"></script>
-		<script type="text/javascript" src="js/carrossel.js"></script> -->
     <!--Plugins JS e jQuery-->
     <header>
       <div class="container">
@@ -52,16 +50,16 @@
       <div class="col-12">
         <div class="row">
           <div class="col-8 schedule-hour">
-            <script type="text/javascript" src="js/horarioDaProgramacao.js"></script>
           </div>
+          <script src="js/horarioDaProgramacao.js"></script>
           <div class="col-4 schedule-block-time">
             <div class="schedule-time">
-              <div class="hour">23h</div>
+              <p class="hour">23h</p>
               <button onclick="openAnimeDescri()">
                 <p>23:00</p>
                 <div class="image-description">
                   <div>
-                    <img src="images/desenho4.png">
+                    <img src="images/tom-e-jerry.png">
                   </div>
                   <div>
                     <span class="description">Tom & Jerry</span>
@@ -72,7 +70,7 @@
                 <p>23:15</p>
                 <div class="image-description">
                   <div>
-                    <img src="images/desenho4.png">
+                    <img src="images/tom-e-jerry.png">
                   </div>
                   <div>
                     <span class="description">Tom & Jerry</span>
@@ -83,7 +81,7 @@
                 <p>23:30</p>
                 <div class="image-description">
                   <div>
-                    <img src="images/desenho4.png">
+                    <img src="images/tom-e-jerry.png">
                   </div>
                   <div>
                     <span class="description">Tom & Jerry</span>
@@ -94,13 +92,56 @@
                 <p>23:45</p>
                 <div class="image-description">
                   <div>
-                    <img src="images/desenho4.png">
+                    <img src="images/tom-e-jerry.png">
                   </div>
                   <div>
                     <span class="description">Tom & Jerry</span>
                   </div>
                 </div>
               </button>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div id="carrossel-animations">
+              <div id="carrossel" class="carrossel-animations">
+                <ul class="animation-list-ul">
+                  <li>
+                    <a href="#">
+                      <img alt="Turma da Mônica" src="images/monica.png">
+                      <h2>TURMA DA MÔNICA</h2>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img alt="Kim Possible" src="images/kim-possible.png">
+                      <h2>Kim Possible</h2>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img alt="Digimon" src="images/digimon.png">
+                      <h2>Digimon</h2>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img alt="Dragon Ball" src="images/dragon-ball.png">
+                      <h2>Dragon Ball</h2>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img alt="Hantaro" src="images/hantaro.png">
+                      <h2>Hantaro</h2>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div id="menu-carrossel">
+                <a href="#" class="prev" title="Anterior">Anterior</a>
+                <a href="#" class="next" title="Próximo">Próximo</a>
+              </div>
             </div>
           </div>
         </div>
@@ -141,36 +182,4 @@
 	</body>
 </html>
 
-<script type="text/javascript">
-  dateDayWeek();
-  function dateDayWeek() {
-    var now = new Date();
-    var weekday = new Array(7);
-      weekday[0] = "Domingo";
-      weekday[1] = "Segunda";
-      weekday[2] = "Terça";
-      weekday[3] = "Quarta";
-      weekday[4] = "Quinta";
-      weekday[5] = "Sexta";
-      weekday[6] = "Sábado";
-    var week = weekday[now.getDay()];
-    document.getElementById("console-date-day-week").innerHTML = "<p>" + week + " " + now.getDate() + "</p>";
-    var t = setTimeout(startTime, 86400000);
-	}
-
-	function startTime() {
-		var time = new Date();
-	    var h = time.getHours();
-	    var m = time.getMinutes();
-	    var s = time.getSeconds();
-	    h = checkTime(h);
-	    m = checkTime(m);
-	    document.getElementById("console-time-now").innerHTML = h + ":" + m;
-	    var t = setTimeout(startTime, 500);
-	}
-
-	function checkTime(i) {
-	    if (i < 10) {i = "0" + i};
-	    return i;
-	}
-</script>
+<script src="js/dateWeek.js"></script>
