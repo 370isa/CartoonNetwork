@@ -1,15 +1,40 @@
-var hour = new Date().getHours();
+const scheduleHour = $('.container .schedule-hour');
 
-for (let i = 0; i < 24; i++){
-	if (i === hour) {
-		if (i < 10) {
-			i = '0' + i;
-		}
-
-		document.write("<button type='button' name='hour-" + i + "' class='hour-shedule hour-now hour" + i + "'>" + i + "h</button>");
-	} else {
-		document.write("<button type='button' name='hour-" + i + "' class='hour-shedule hour hour" + i + "'>" + i + "h</button>");
-	}
+function convertToTen(time) {
+	return (time < 10) ? '0' + time : time;
 }
 
-document.write("<button type='button' class='hour-shedule hour-next'>&gt;</button>");
+function bgColorButtonHour(position) {
+	return (position == 0 || position%3 == 0) ? '#009ade' :
+		(position == 1 || position%3 == 1) ? '#ec0080' : '#ffea00';
+}
+
+function addButtonHour(parmClass, classHour, numColor, color, hour) {
+	return $(parmClass).append("<button type='button' " +
+	"class='hour-shedule hour" + classHour + "' " +
+	"style='background-color: " + numColor + "; color: " + color + ";'>" + hour
+	+ "</button>");
+}
+
+var hour = new Date().getHours();
+hour = convertToTen(hour);
+
+var numColor, colorHour, classHour;
+
+for (let i = 0; i < 24; i++){
+	colorHour = bgColorButtonHour(i);
+	i = convertToTen(i);
+
+	if (i === hour) {
+		classHour = '-now';
+		numColor = colorHour;
+		colorHour = '#000'
+	} else {
+		classHour = '';
+		numColor = '#fff';
+	}
+
+	addButtonHour(scheduleHour, classHour, colorHour, numColor, i + 'h');
+}
+
+addButtonHour(scheduleHour, '-next', 'white', 'transparent', '&gt;');

@@ -12,6 +12,7 @@
       color: $white;
       font-family: $fontFac1;
       font-size: 50px;
+      margin-bottom: 0;
       padding: 24px 0;
     }
   }
@@ -38,6 +39,11 @@
       display: flex;
       position: relative;
       right: 30px;
+
+      img {
+        height: 97px;
+        width: 97px;
+      }
 
       span {
         font-family: $fontFac2;
