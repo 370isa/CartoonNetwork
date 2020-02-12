@@ -1,9 +1,24 @@
-const scheduleTime = $('.schedule-block-time .schedule-time');
-const btnHour = $('.container .schedule-hour button');
+const btnHour = document.getElementsByClassName('hour-shedule hour');
+const scheduleTime = $('div.schedule-time');
 
-// percorre os botões
-for (const btn of btnHour) {
-  // procura o botão com a classe hour-now
-  
+function componentProgramTime(program) {
+  const bgColor = program.style.getPropertyValue('background-color');
+  const txtColor = program.style.getPropertyValue('color');
+  const hourSelected = program.innerHTML;
+
+  scheduleTime.css('background-color', bgColor);
+  $('.schedule-time p.hour').css('color', txtColor);
+
+  $('.schedule-time p span').text(hourSelected.substring(0,2));
+  $('.schedule-time p.hour').text(hourSelected);
 }
-// scheduleTime com as mesmas informações
+
+for (let btn of btnHour) {
+  if (btn.getAttribute('class') == 'hour-shedule hour hour-now') {
+    componentProgramTime(btn);
+  }
+
+  $(btn).click(function() {
+    componentProgramTime(btn);
+  });
+}
