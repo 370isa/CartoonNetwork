@@ -19,6 +19,7 @@ function startTime() {
   var time = new Date();
   var h = time.getHours();
   var m = time.getMinutes();
+  var s = time.getSeconds();
 
   h = checkTime(h);
   m = checkTime(m);
@@ -26,6 +27,10 @@ function startTime() {
   document.getElementById("console-time-now").innerHTML = h + ":" + m;
 
   var t = setTimeout(startTime, 500);
+
+  if (s == 59 && m == 59) {
+    document.location.reload(true);
+  }
 }
 
 function checkTime(i) {

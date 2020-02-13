@@ -1,4 +1,7 @@
 .schedule-hour {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding: 0 30px;
   text-align: center;
 
@@ -7,11 +10,8 @@
     filter: opacity(.8);
     font-family: $fontFac1;
     font-size: 25px;
-    height: 110px;
-    margin: 3px;
     padding: 0;
     transition: filter ease .5s;
-    width: 110px;
 
     &:hover {
       filter: none;

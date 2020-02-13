@@ -9898,6 +9898,9 @@ nav .nav-list li.search a {
 }
 
 .schedule-hour {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding: 0 30px;
   text-align: center;
 }
@@ -9907,11 +9910,8 @@ nav .nav-list li.search a {
   filter: opacity(0.8);
   font-family: "Lubalin Graph Bold";
   font-size: 25px;
-  height: 110px;
-  margin: 3px;
   padding: 0;
   transition: filter ease .5s;
-  width: 110px;
 }
 
 .schedule-hour button:hover {
@@ -9934,7 +9934,7 @@ nav .nav-list li.search a {
 
 .schedule-block-time .schedule-time {
   background: #ffa000;
-  margin: 3px 30px 2px 0;
+  margin: 0 30px 2px 0;
   padding-bottom: 15px;
   text-align: center;
 }
@@ -9944,7 +9944,7 @@ nav .nav-list li.search a {
   font-family: "Lubalin Graph Bold";
   font-size: 50px;
   margin-bottom: 0;
-  padding: 24px 0;
+  padding: 30px 0;
 }
 
 .schedule-block-time button {
@@ -9952,7 +9952,8 @@ nav .nav-list li.search a {
   background: #fff;
   border: 0 none;
   display: flex;
-  margin: 0 auto 10px;
+  margin: 0 auto 15px;
+  width: 280px;
 }
 
 .schedule-block-time button p {
@@ -9963,6 +9964,7 @@ nav .nav-list li.search a {
   position: relative;
   right: 25px;
   transform: rotate(270deg);
+  width: 99px;
 }
 
 .schedule-block-time button .image-description {

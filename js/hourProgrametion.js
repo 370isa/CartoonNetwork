@@ -11,7 +11,7 @@ function bgColorButtonHour(position) {
 
 function addButtonHour(parmClass, classHour, numColor, color, hour) {
 	return $(parmClass).append("<button type='button' " +
-	"class='hour-shedule hour" + classHour + "' " +
+	"class='hour-shedule " + classHour + "' " +
 	"style='background-color: " + numColor + "; color: " + color + ";'>" + hour
 	+ "</button>");
 }
@@ -26,15 +26,15 @@ for (let i = 0; i < 24; i++){
 	i = convertToTen(i);
 
 	if (i === hour) {
-		classHour = '-now';
+		classHour = 'hour hour-now';
 		numColor = colorHour;
 		colorHour = '#000'
 	} else {
-		classHour = '';
+		classHour = 'hour';
 		numColor = '#fff';
 	}
 
 	addButtonHour(scheduleHour, classHour, colorHour, numColor, i + 'h');
 }
 
-addButtonHour(scheduleHour, '-next', 'white', 'transparent', '&gt;');
+addButtonHour(scheduleHour, 'next-day', 'white', 'transparent', '&gt;');
