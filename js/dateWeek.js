@@ -19,21 +19,20 @@ function startTime() {
   var time = new Date();
   var h = time.getHours();
   var m = time.getMinutes();
-  var s = time.getSeconds();
 
   h = checkTime(h);
   m = checkTime(m);
 
   document.getElementById("console-time-now").innerHTML = h + ":" + m;
 
-  var t = setTimeout(startTime, 500);
+  var t = setTimeout(startTime, 1000);
 
-  if (s == 59 && m == 59) {
+  if (m == '00' && time.getSeconds() == 0) {
     document.location.reload(true);
   }
 }
 
 function checkTime(i) {
-  if (i < 10) {i = "0" + i};
+  if (i < 10) {i = '0' + i};
   return i;
 }
