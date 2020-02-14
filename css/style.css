@@ -9710,7 +9710,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #carrossel-animations {
+  align-items: center;
   background: linear-gradient(#fff 2%, #ec0080 2%, #ec0080 90%, #009ade 90%, #009ade 97%, #ffea00 97%);
+  display: flex;
   height: 150px;
   margin: 10px 0 1px;
   position: relative;
@@ -9718,57 +9720,56 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #carrossel-animations .carrossel-animations {
+  align-items: center;
+  display: flex;
   height: 100%;
+  justify-content: space-around;
   margin: 0 auto;
   width: 74%;
 }
 
-#carrossel-animations .animation-list-ul {
-  display: flex;
-  height: 100%;
-  justify-content: space-around;
-  list-style: none;
-}
-
-#carrossel-animations .animation-list-ul h2 {
-  display: none;
-}
-
-#carrossel-animations .animation-list-ul li {
+#carrossel-animations .carrossel-animations .slick-track {
   align-items: flex-end;
   display: flex;
+  height: 100%;
   width: 14%;
 }
 
-#carrossel-animations .animation-list-ul img {
-  height: auto;
-  width: 100%;
+#carrossel-animations .carrossel-animations h2 {
+  display: none;
 }
 
-#carrossel-animations #menu-carrossel {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  margin: 0 7.5%;
-  position: absolute;
-  top: 0;
-  width: 85%;
-  z-index: -1;
+#carrossel-animations .carrossel-animations img {
+  height: 150px;
+  margin: 0 auto;
+  width: auto;
 }
 
-#carrossel-animations #menu-carrossel .prev,
-#carrossel-animations #menu-carrossel .next {
+#carrossel-animations button {
   background: url(../images/arrow-left.svg) no-repeat 0 0/100% auto;
+  border: 0 none;
   color: transparent;
-  cursor: pointer;
   height: 60px;
+  position: absolute;
   width: 60px;
   z-index: 9;
 }
 
-#carrossel-animations #menu-carrossel .next {
+#carrossel-animations button:hover {
+  opacity: .8;
+}
+
+#carrossel-animations button:focus {
+  outline: 0 none;
+}
+
+#carrossel-animations .slick-prev {
+  left: -50px;
+}
+
+#carrossel-animations .slick-next {
   background: url(../images/arrow-right.svg) no-repeat 0 0/100% auto;
+  right: -50px;
 }
 
 .description-page-footer {
@@ -9933,7 +9934,6 @@ nav .nav-list li.search a {
 }
 
 .schedule-block-time .schedule-time {
-  background: #ffa000;
   margin: 0 30px 2px 0;
   padding-bottom: 15px;
   text-align: center;
