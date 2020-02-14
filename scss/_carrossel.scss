@@ -1,10 +1,12 @@
 #carrossel-animations {
+  align-items: center;
   background: linear-gradient(
     $white 2%,
     $deep-pink 2%, $deep-pink 90%,
     $pacific-blue 90%, $pacific-blue 97%,
     $golden-yellow 97%
   );
+  display: flex;
   height: 150px;
   margin: 10px 0 1px;
   position: relative;
@@ -16,20 +18,20 @@
     width: 74%;
   }
 
-  .animation-list-ul {
+  .animation-list {
     display: flex;
     height: 100%;
     justify-content: space-around;
     list-style: none;
 
-    h2 {
-      display: none;
-    }
-
-    li {
+    div {
       align-items: flex-end;
       display: flex;
       width: 14%;
+    }
+
+    h2 {
+      display: none;
     }
 
     img {
@@ -38,29 +40,31 @@
     }
   }
 
-  #menu-carrossel {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-    margin: 0 7.5%;
+  button {
+    background: url(../images/arrow-left.svg) no-repeat 0 0 / 100% auto;
+    border: 0 none;
+    color: transparent;
+    cursor: pointer;
+    height: 60px;
     position: absolute;
-    top: 0;
-    width: 85%;
-    z-index: -1;
+    width: 60px;
+    z-index: 9;
 
-    .prev,
-    .next {
-      background: url(../images/arrow-left.svg) no-repeat 0 0 / 100% auto;
-      color: transparent;
-      cursor: pointer;
-      height: 60px;
-      width: 60px;
-      z-index: 9;
+    &:hover {
+      opacity: .8;
     }
 
-    .next {
-      background: url(../images/arrow-right.svg) no-repeat 0 0 / 100% auto;
+    &:focus {
+      outline: 0 none;
     }
+  }
+
+  .prev {
+    left: 90px;
+  }
+
+  .next {
+    background: url(../images/arrow-right.svg) no-repeat 0 0 / 100% auto;
+    right: 90px;
   }
 }
