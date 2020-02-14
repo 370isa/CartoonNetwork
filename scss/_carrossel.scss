@@ -13,20 +13,17 @@
   z-index: 0;
 
   .carrossel-animations {
-    height: 100%;
-    margin: 0 auto;
-    width: 74%;
-  }
-
-  .animation-list {
+    align-items: center;
     display: flex;
     height: 100%;
     justify-content: space-around;
-    list-style: none;
+    margin: 0 auto;
+    width: 74%;
 
-    div {
+    .slick-track {
       align-items: flex-end;
       display: flex;
+      height: 100%;
       width: 14%;
     }
 
@@ -35,8 +32,9 @@
     }
 
     img {
-      height: auto;
-      width: 100%;
+      height: 150px;
+      margin: 0 auto;
+      width: auto;
     }
   }
 
@@ -44,7 +42,6 @@
     background: url(../images/arrow-left.svg) no-repeat 0 0 / 100% auto;
     border: 0 none;
     color: transparent;
-    cursor: pointer;
     height: 60px;
     position: absolute;
     width: 60px;
@@ -59,12 +56,12 @@
     }
   }
 
-  .prev {
-    left: 90px;
+  .slick-prev {
+    left: -50px;
   }
 
-  .next {
+  .slick-next {
     background: url(../images/arrow-right.svg) no-repeat 0 0 / 100% auto;
-    right: 90px;
+    right: -50px;
   }
 }

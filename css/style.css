@@ -9720,38 +9720,35 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #carrossel-animations .carrossel-animations {
+  align-items: center;
+  display: flex;
   height: 100%;
+  justify-content: space-around;
   margin: 0 auto;
   width: 74%;
 }
 
-#carrossel-animations .animation-list {
-  display: flex;
-  height: 100%;
-  justify-content: space-around;
-  list-style: none;
-}
-
-#carrossel-animations .animation-list div {
+#carrossel-animations .carrossel-animations .slick-track {
   align-items: flex-end;
   display: flex;
+  height: 100%;
   width: 14%;
 }
 
-#carrossel-animations .animation-list h2 {
+#carrossel-animations .carrossel-animations h2 {
   display: none;
 }
 
-#carrossel-animations .animation-list img {
-  height: auto;
-  width: 100%;
+#carrossel-animations .carrossel-animations img {
+  height: 150px;
+  margin: 0 auto;
+  width: auto;
 }
 
 #carrossel-animations button {
   background: url(../images/arrow-left.svg) no-repeat 0 0/100% auto;
   border: 0 none;
   color: transparent;
-  cursor: pointer;
   height: 60px;
   position: absolute;
   width: 60px;
@@ -9759,20 +9756,20 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #carrossel-animations button:hover {
-  opacity: .9;
+  opacity: .8;
 }
 
 #carrossel-animations button:focus {
   outline: 0 none;
 }
 
-#carrossel-animations .prev {
-  left: 90px;
+#carrossel-animations .slick-prev {
+  left: -50px;
 }
 
-#carrossel-animations .next {
+#carrossel-animations .slick-next {
   background: url(../images/arrow-right.svg) no-repeat 0 0/100% auto;
-  right: 90px;
+  right: -50px;
 }
 
 .description-page-footer {

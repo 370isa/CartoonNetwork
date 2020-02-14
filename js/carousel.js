@@ -1,7 +1,8 @@
-require('slick-carousel');
-
-$("#carrossel .animation-list").slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
+$(document).ready(function(){
+  $('#carrossel').slick({
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  });
 });
