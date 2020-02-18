@@ -1,0 +1,14 @@
+<div id="carrossel-animations">
+  <div id="carrossel" class="carrossel-animations">
+    {% for item in items %}
+      <div class="item">
+        <a href="#">
+          <img src="{{ item.image }}" alt="{{ item.title }}">
+          <h2>{{ item.title }}</h2>
+          <p class="descri">{{ item.description }}</p>
+          <p class="class">{{ item.classification }}</p>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>

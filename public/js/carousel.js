@@ -1,8 +1,10 @@
 $(document).ready(function(){
   $('#carrossel').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
     infinite: true,
-    speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
+    speed: 500,
   });
 });
