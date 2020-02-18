@@ -29,6 +29,11 @@
 
     h2 {
       display: none;
+      text-transform: uppercase;
+    }
+
+    p {
+      display: none;
     }
 
     img {
@@ -49,10 +54,6 @@
 
     &:hover {
       opacity: .8;
-    }
-
-    &:focus {
-      outline: 0 none;
     }
   }
 

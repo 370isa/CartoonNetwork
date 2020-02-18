@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Cartoon Network</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body onload="startTime()">
+		<!--Plugins JS e jQuery-->
+		<script type="text/javascript" src="js/funcoes.js"></script>
+    <!--Plugins JS e jQuery-->
+    {% include './header.njk' %}
+
+    <nav id="nav">
+      <ul class="nav-list">
+        <li class="home">
+          <a class="level0" href="https://www.cartoonnetwork.com.br">Home page</a>
+        </li>
+        <li class="search">
+          <a href="/">Procurar</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="zone-date">
+        <div id="console-date-day-week"></div>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-8 schedule-hour"></div>
+          <script src="js/hourProgrametion.js"></script>
+
+          <div class="col-4 schedule-block-time">
+            {% include './schedule-time.njk' %}
+          </div>
+
+          <div class="col-12">
+            {% include 'carousel.njk' %}
+          </div>
+        </div>
+      </div>
+
+      {% include './modal.njk' %}
+    </div>
+
+    <div class="description-page-footer">
+      <div class="container-fluid">
+        <div class="footer-sup">
+          <a href="https://www.cartoonnetwork.com.br">
+            <img src="images/logo_cartoon.png" alt="Cartoon Network">
+          </a>
+          <p>
+            O Cartoon Network é o lugar de seus desenhos favoritos, episódios
+            completos, vídeos, aplicativos e jogos grátis. Você pode jogar
+            gratuitamente com seus personagens favoritos de Clarêncio, O
+            Otimista, Jovens Titãs em Ação, Hora de Aventura com Finn e Jake,
+            Apenas Um Show, O Incrível Mundo de Gumball, Steven Universo,
+            Titio Avô, Ursos Sem Curso e muito mais!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="menuLinks">
+          <a href="https://www.cartoonnetwork.com.br/pais" target="_blank" title="Guia Para Pais">Guia Para Pais</a>
+          <a href="https://www.cartoonnetwork.com.br/dicas-de-seguranca" target="_blank" title="Dicas de Segurança">Dicas de Segurança</a>
+          <a href="https://www.cartoonnetwork.com.br/programacao" target="_blank" title="PROGRAMACAO">PROGRAMACAO</a>
+          <a href="http://www.turnertapkit.com/ancine/networkFilesExternal?networkId=cnla" target="_blank" title="PROGRAMAÇÃO EFETIVAMENTE VEICULADA">PROGRAMAÇÃO EFETIVAMENTE VEICULADA</a>
+          <br />
+          <a href="http://www.turnertapkit.com/ancine/networkFilesExternal?networkId=cnhd" target="_blank" title="PROGRAMAÇÃO EFETIVAMENTE VEICULADA (HD)">PROGRAMAÇÃO EFETIVAMENTE VEICULADA (HD)</a>
+          <a href="https://www.cartoonnetwork.com.br/ajuda" target="_blank" title="AJUDA">AJUDA</a>
+        </div>
+      </div>
+    </footer>
+	</body>
+</html>
+
+<script src="js/dateWeek.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/scheduleTime.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/modal.js"></script>
